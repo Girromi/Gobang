@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>五子棋</title>
+   <style>
+      .title {
+         text-align: center;
+      }
+
+      .chess {
+         display: block;
+         margin: 50px auto;
+         box-shadow: 0 0 10px #b9b9b9;
+         cursor: pointer;
+      }
+
+      div {
+         text-align: center;
+
+      }
+
+      .restart {
+         padding: 5px 10px;
+         background-color: #6dda14;
+         border-radius: 8px;
+         color: aliceblue;
+      }
+   </style>
+</head>
+
+<body>
+   <!-- <script src="js/drawChessBoard.js"></script> -->
+   <script src="js/Game.js"></script>
+   <script>
+      var game = new Game();
+   </script>
+   <h3 class="title">--五子棋--</h3>
+   <canvas class="chess" width="450px" height="450px"></canvas>
+   <div>
+      <a class="restart">重新开始</a>
+   </div>
+   <!-- <script>
+        window.onload = function() {
+            drawChessBoard();
+        }
+    </script> -->
+</body>
+
+</html>
